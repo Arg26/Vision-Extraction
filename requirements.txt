@@ -1,7 +1,7 @@
-# Streamlit for the web app
+# Streamlit web app
 streamlit==1.26.0
 
-# Torch ecosystem (make sure versions match Python 3.13)
+# Torch ecosystem
 torch==2.8.0
 torchvision==0.23.0
 torchaudio==2.8.0
@@ -11,14 +11,14 @@ opencv-python==4.12.0.88
 opencv-python-headless==4.12.0.88
 Pillow>=9.5.0,<10.1
 
-# Augmentation
+# Image augmentations
 albumentations==2.0.8
 albucore==0.0.24
 
-# scikit-image (latest compatible with Pillow<10.1)
+# Scikit-image compatible with Pillow<10.1
 scikit-image==0.24.0
 
-# Utilities for Streamlit
+# Utilities required by Streamlit
 rich>=10.14.0,<14
 markdown-it-py==4.0.0
 mdurl==0.1.2
