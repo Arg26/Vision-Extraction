@@ -1,0 +1,57 @@
+# Core app
+streamlit==1.26.0
+
+# PyTorch
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+
+# Image processing
+albumentations==2.0.8
+albucore==0.0.24
+opencv-python==4.12.0.88
+opencv-python-headless==4.12.0.88
+Pillow==10.0.0
+scikit-image==0.25.2
+imageio
+tifffile
+
+# Data & Analysis
+numpy==2.2.6
+pandas
+scipy
+scikit-learn
+statsmodels
+matplotlib==3.9.2
+seaborn
+altair
+
+# Utilities
+pyyaml
+requests
+urllib3
+tqdm
+rich
+jsonschema
+python-dotenv
+
+# Async / HTTP
+aiohttp
+aiobotocore
+aioitertools
+aiosignal
+
+# Optional visualization
+plotly
+hvplot
+panel
+
+# Optional NLP / text
+nltk
+textdistance
+
+# Others
+attrs
+packaging
+six
+typing_extensions==4.15.0
