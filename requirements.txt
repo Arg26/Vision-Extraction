@@ -1,7 +1,18 @@
-streamlit==1.26.0
-torch==2.2.0
-torchvision==0.17.1
-Pillow==9.5.0
-numpy==1.26.0
-gdown==4.7.1
-typing-extensions>=4.7.1
+# Python 3.11
+
+# For Streamlit Web App
+streamlit
+
+# For numerical operations
+numpy
+
+# For image processing
+Pillow
+
+# For downloading the model from Google Drive
+gdown
+
+# For PyTorch (CPU version for compatibility with Streamlit Cloud)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+torchvision
