@@ -11,47 +11,47 @@ albumentations==2.0.8
 albucore==0.0.24
 opencv-python==4.12.0.88
 opencv-python-headless==4.12.0.88
-Pillow==10.0.0
+Pillow>=9.5.0,<10
 scikit-image==0.25.2
-imageio
-tifffile
+imageio==2.31.1
+tifffile==2025.9.11
 
 # Data & Analysis
 numpy==2.2.6
-pandas
-scipy
-scikit-learn
-statsmodels
+pandas==2.1.1
+scipy==1.11.1
+scikit-learn==1.3.2
+statsmodels==0.14.2
 matplotlib==3.9.2
-seaborn
-altair
+seaborn==0.12.3
+altair==5.0.1
 
 # Utilities
-pyyaml
-requests
-urllib3
-tqdm
-rich
-jsonschema
-python-dotenv
+pyyaml==6.0
+requests==2.32.0
+urllib3==2.0.4
+tqdm==4.66.1
+rich==14.1.0
+jsonschema==4.21.1
+python-dotenv==1.0.0
 
 # Async / HTTP
-aiohttp
-aiobotocore
-aioitertools
-aiosignal
+aiohttp==3.8.5
+aiobotocore==2.9.2
+aioitertools==0.11.0
+aiosignal==1.3.1
 
 # Optional visualization
-plotly
-hvplot
-panel
+plotly==5.20.0
+hvplot==0.9.3
+panel==1.2.1
 
 # Optional NLP / text
-nltk
-textdistance
+nltk==3.9.1
+textdistance==4.6.1
 
 # Others
-attrs
-packaging
-six
+attrs==23.1.0
+packaging==23.1
+six==1.16.0
 typing_extensions==4.15.0
