@@ -49,7 +49,7 @@ st.markdown("<h1>Vision Extraction</h1>", unsafe_allow_html=True)
 st.markdown("<h2>How Vision Extraction Works</h2>", unsafe_allow_html=True)
 
 # ------------------ Explainer image ------------------
-img_path = "Explainer.png"
+img_path = os.path.join(os.path.dirname(__file__), "Explainer.png")
 if os.path.exists(img_path):
     img = Image.open(img_path)
     buffered = BytesIO()
@@ -111,6 +111,7 @@ def run_inference(img_pil):
     img_np = np.array(img_resized)
     object_only = np.zeros_like(img_np)
     object_only[pred == 1] = img_np[pred == 1]
+    object_only = object_only.astype(np.uint8)  # <-- fix for display
 
     return img_np, object_only
 
@@ -122,10 +123,10 @@ if uploaded_file is not None:
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("<h3 style='text-align:center;'>Original</h3>", unsafe_allow_html=True)
-        st.image(original, caption="Original Image", use_column_width=True)
+        st.image(original, caption="Original Image", use_container_width=True)
     with col2:
         st.markdown("<h3 style='text-align:center;'>Predicted</h3>", unsafe_allow_html=True)
-        st.image(predicted, caption="Predicted Image", use_column_width=True)
+        st.image(predicted, caption="Predicted Image", use_container_width=True)
 
     # ------------------ Download button ------------------
     pred_pil = Image.fromarray(predicted)
