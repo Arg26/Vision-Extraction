@@ -1,5 +1,5 @@
 # Streamlit web app
-streamlit==1.26.0
+streamlit==1.28.0
 
 # Torch ecosystem
 torch==2.8.0
@@ -7,8 +7,8 @@ torchvision==0.23.0
 torchaudio==2.8.0
 
 # Image processing
-opencv-python==4.11.0.38
-opencv-python-headless==4.11.0.38
+opencv-python==4.12.0.88
+opencv-python-headless==4.12.0.88
 Pillow>=9.5.0,<10.1
 
 # Image augmentations
@@ -24,5 +24,5 @@ markdown-it-py==4.0.0
 mdurl==0.1.2
 pygments==2.19.2
 
-# Explicit numpy version to resolve conflicts
-numpy==1.24.6
+# Explicit numpy for compatibility
+numpy==2.2.6
