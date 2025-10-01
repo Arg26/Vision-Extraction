@@ -17,7 +17,7 @@ imageio==2.31.1
 tifffile==2025.9.11
 
 # Data & Analysis
-numpy==2.2.6
+numpy>=1.24,<2
 pandas==2.1.1
 scipy==1.11.1
 scikit-learn==1.3.2
