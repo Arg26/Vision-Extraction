@@ -1,16 +1,16 @@
 # Core
 streamlit==1.26.0
 
-# PyTorch & torchvision (compatible with Python 3.11)
-torch==2.2.0
-torchvision==0.18.1
+# PyTorch & torchvision (Python 3.13 compatible)
+torch==2.8.0
+torchvision==0.15.2
 
 # Image processing
-Pillow==10.0.0
+Pillow==9.5.0
 numpy==1.26.0
 
 # Model download
 gdown==4.7.1
 
-# Optional: for smooth UI in Streamlit
+# Optional: for type hints
 typing-extensions==4.7.1
