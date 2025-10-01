@@ -1,7 +1,7 @@
 # Core
 streamlit==1.26.0
 
-# PyTorch & torchvision (Python 3.11 compatible)
+# PyTorch & torchvision compatible with Python 3.11
 torch==2.2.0
 torchvision==0.15.1
 
@@ -9,8 +9,8 @@ torchvision==0.15.1
 Pillow==9.5.0
 numpy==1.26.0
 
-# Model download
+# Model download from Google Drive
 gdown==4.7.1
 
-# Typing extensions
+# Typing extensions required by Torch
 typing-extensions>=4.7.1
