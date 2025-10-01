@@ -8,6 +8,19 @@ from PIL import Image
 from io import BytesIO
 import base64
 
+import os
+import requests
+
+model_path = "model/best_model11.pth"
+
+if not os.path.exists(model_path):
+    os.makedirs("model", exist_ok=True)
+    url = "https://drive.google.com/uc?export=download&id=1R7ad939w_8dBsk5SdJ8ce9Ku7BA3XOpI"
+    r = requests.get(url)
+    with open(model_path, "wb") as f:
+        f.write(r.content)
+
+
 # ------------------ Streamlit page config ------------------
 st.set_page_config(page_title="Vision Extraction", layout="wide")
 
