@@ -1,11 +1,9 @@
-# requirements.txt
-
 streamlit
 torch
 torchvision
 numpy
 Pillow
 gdown
-opencv-python
+opencv-python-headless
 streamlit-image-comparison
 requests
