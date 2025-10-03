@@ -1,18 +1,11 @@
-# Python 3.11
+# requirements.txt
 
-# For Streamlit Web App
 streamlit
-
-# For numerical operations
-numpy
-
-# For image processing
-Pillow
-
-# For downloading the model from Google Drive
-gdown
-
-# For PyTorch (CPU version for compatibility with Streamlit Cloud)
---extra-index-url https://download.pytorch.org/whl/cpu
 torch
 torchvision
+numpy
+Pillow
+gdown
+opencv-python
+streamlit-image-comparison
+requests
